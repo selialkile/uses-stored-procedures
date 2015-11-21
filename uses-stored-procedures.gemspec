@@ -7,7 +7,7 @@ require "uses_stored_procedures/version"
 Gem::Specification.new do |s|
   s.name        = "uses-stored-procedures"
   s.version     = UsesStoreProcedures::VERSION
-  s.authors     = ["Leo O'Donnell"]
+  s.authors     = ["Leo O'Donnell", "Thiago Coutinho"]
   s.email       = ["leopold.odonnell@gmail.com"]
   s.homepage    = "https://github.com/leopoldodonnell/uses-stored-procedures"
   s.summary     = "Extend ActiveRecord with the ability to use Stored Procedures."
@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
     ActiveRecord with a class method to add to your models or services.
   EOF
   s.has_rdoc    = 'yard'
-  
+
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.12"
+  s.add_dependency "rails", "> 3.2.12"
 end
